@@ -9,6 +9,7 @@ import ProtectedRoute from './components/ProtectedRoutes';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
 import './App.css';
+import Watchlist from './pages/Watchlist';
 
 
 
@@ -26,7 +27,6 @@ export default function App() {
           <Route path="/search" element={<Search />} />
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
-          <Route path="/watchlist" element={<Watchlist />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/watchlist" element={<Watchlist />} />
             <Route path="/profile" element={<Profile />} />
